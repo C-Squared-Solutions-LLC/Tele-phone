@@ -60,7 +60,7 @@ jobs:
           mkdir -p dist
           cp app/build/outputs/apk/release/app-release.apk "dist/Tele-phone-${{ steps.version.outputs.name }}.apk"
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: Tele-phone-${{ steps.version.outputs.name }}
           path: dist/*.apk
